@@ -84,7 +84,7 @@ php artisan migrate --seed
 ### 6️⃣ Run the Application
 
 ```sh
-php artisan serve
+php artisan serve --port=8081
 ```
 
 ---
@@ -110,7 +110,7 @@ php artisan schedule:work
 ---
 ## API Endpoints (Postman Collection)
 
-Import the Postman collection from postman/email-scheduler.postman_collection.json.
+Import the Postman collection from (https://documenter.getpostman.com/view/34201461/2sAYdfqB6D)
 ```
 
 ---
