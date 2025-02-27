@@ -1,4 +1,4 @@
-# Laravel Email Scheduler - SmartRob-Technologies
+# Laravel Email Scheduler - SmartRob-Technologies by Victor Oluwafemi Morakinyo
 
 ## Overview
 
@@ -75,10 +75,11 @@ php artisan key:generate
 
 ### 5️⃣ Setup Database
 
-Run migrations and seed data:
+Run migrations
 
 ```sh
-php artisan migrate --seed
+php artisan migrate
+php artisan queue:table
 ```
 
 ### 6️⃣ Run the Application
@@ -88,7 +89,15 @@ php artisan serve --port=8081
 ```
 
 ---
+## Running Scheduled Jobs
 
+Laravel's scheduler should run via a cron job:
+
+```sh
+php artisan schedule:work
+```
+
+---
 ## Running the Queues & Jobs
 
 Ensure you run the queue worker:
@@ -99,15 +108,6 @@ php artisan queue:work
 
 ---
 
-## Running Scheduled Jobs & Failed Email Retries
-
-Laravel's scheduler should run via a cron job:
-
-```sh
-php artisan schedule:work
-```
-
----
 ## API Endpoints (Postman Collection)
 
 Import the Postman collection from (https://documenter.getpostman.com/view/34201461/2sAYdfqB6D)
