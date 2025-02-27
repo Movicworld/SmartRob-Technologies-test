@@ -111,7 +111,7 @@ php artisan queue:work
 ## API Endpoints (Postman Collection)
 
 Import the Postman collection from (https://documenter.getpostman.com/view/34201461/2sAYdfqB6D)
-```
+
 
 ---
 
